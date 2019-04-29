@@ -79,7 +79,33 @@
 
     </style>
     <meta charset="utf-8">
-    <title></title>
+    <title>sign up</title>
+    
+  </head>
+  <body  style="background-color: #f4f4ef;">
+   <div class="outer-container">
+    <div class="inner-container">
+     <div class="header">Create your account</div>
+      <div class="form-group">
+       <form >
+          <input type="text"  name="First Name" placeholder="First Name" class="text-input" autofocus value="" required >
+
+          <input type="text"  name="Last Name" placeholder="Last Name" class=" text-input" value="" required>
+          <input type="text"  name="Username" placeholder="Username" class=" text-input" value="" required>
+          <input type="email"  name="Email Address" placeholder="Email Address" class=" text-input" value="" required>
+          <input type="password" id="password" name="Password"  placeholder="Password" class=" input text-input" value="" onkeyup='check();' required  >
+           <input type="password"  id="confirm_password"  name="Confirm Password" style="margin-bottom: 15px;"  placeholder="Confirm Password" class=" text-input" value="" onkeyup='check();' required>
+
+<!--<input type="checkbox" style="text-align:left" id="click" onclick="showPassword()">Show Password-->
+<!--<label for="click">-->
+<label for="click" style="float:left">
+<input type="checkbox" style="float:left" id="click" onclick="showPassword()">Show Password</label>
+<button type="submit" class="button_standard" style="cursor: pointer;">Sign Up</button>
+
+        </form>
+       </div>
+    </div>
+   </div>
     <script>
     var check = function() {
  if (document.getElementById('password').value ==
@@ -113,30 +139,6 @@ function showPassword() {
   }
 }
 
-</script>
-  </head>
-  <body  style="background-color: #f4f4ef;">
-   <div class="outer-container">
-    <div class="inner-container">
-     <div class="header">Create your account</div>
-      <div class="form-group">
-       <form >
-          <input type="text"  name="First Name" placeholder="First Name" class="text-input" autofocus value="" required >
-
-          <input type="text"  name="Last Name" placeholder="Last Name" class=" text-input" value="" required>
-          <input type="text"  name="Username" placeholder="Username" class=" text-input" value="" required>
-          <input type="email"  name="Email Address" placeholder="Email Address" class=" text-input" value="" required>
-          <input type="password" id="password" name="Password"  placeholder="Password" class=" input text-input" value="" onkeyup='check();' required  >
-           <input type="password"  id="confirm_password"  name="Confirm Password" style="margin-bottom: 15px;"  placeholder="Confirm Password" class=" text-input" value="" onkeyup='check();' required>
-
-<!--<input type="checkbox" style="text-align:left" id="click" onclick="showPassword()">Show Password-->
-<!--<label for="click">-->
-<label for="click" style="float:left">
-<input type="checkbox" style="float:left" id="click" onclick="showPassword()">Show Password</label>
-<button type="submit" class="button_standard" style="cursor: pointer;">Sign Up</button>
-
-        </form>
-       </div>
-    </div>
-   </div>
+   </script>
+  </body>
 </html>
